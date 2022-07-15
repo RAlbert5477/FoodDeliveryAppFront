@@ -1,0 +1,196 @@
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem calc((100vw - 1000px) / 2);
+    white-space: nowrap;
+    background-color: white;
+    flex-direction: row;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+}
+
+
+.nav-link {
+    color: #24282d;
+    display: flex;
+
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.nav .nav-link .logo{
+    max-height: 100px;
+}
+
+
+.nav .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-btnLink {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .nav-btnLink .nav-btnLink-btn{
+    border-radius: 5px;
+    background: rgb(98, 101, 117);
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    height: 52px;
+    transition: all 0.2s ease-in-out;
+    margin-left: 24px;
+    margin-right: 10px;
+}
+
+.nav .nav-btnLink .nav-btnLink-btn:hover{
+    transition: all 0.2s ease-in-out;
+    background: rgb(110, 131, 194);
+}
+
+
+.burger {
+    margin-right: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.line {
+    width: 3em;
+    height: .3em;
+    background: #424242;
+    margin: .7em;
+    border-radius: 20px;
+    transition: .25s ease-in-out;
+}
+@media screen and (max-width: 819px){
+
+    .burger {
+        display: block;
+    }
+
+    .burger.active .line:first-child {
+        display: none;
+    }
+
+    .burger.active .line:nth-child(2) {
+        width: 3.3em;
+        height: .33em;
+        transform: rotate(-405deg) translateY(8px);
+
+    }
+
+    .burger.active .line:nth-child(3) {
+        width: 3.3em;
+        height: .33em;
+        transform: rotate(-320deg) translateY(-10px);
+    }
+
+
+    nav {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        margin-top: 350px;
+    }
+
+    .nav .nav-menu {
+        box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.92);
+    }
+    .nav .nav-btnLink .nav-btnLink-btn{
+        width: 250%;
+        margin: 0;
+    }
+    .nav-btnLink {
+        width: 35%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .nav-link{
+
+        border-bottom: 1px solid rgba(85, 88, 105, 0.34);
+        width: 100%;
+
+    }
+    .nav-link:nth-child(1){
+        border: none;
+    }
+    .nav-link:nth-child(2){
+        border-top: 1px solid rgba(85, 88, 105, 0.34);
+    }
+    .items {
+        padding: 10px 0 10px 0;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+
+    }
+    .nav-link:hover {
+        background-color: rgba(230, 235, 246, 0.8);
+    }
+    .nav-hamburgerBtn {
+        display: block;
+
+    }
+    .cart-logo {
+        width: 100%;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-link-logo:hover{
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.headerBanner {
+    width: 100%;
+    height: 100px;
+}
+
+.cart-logo {
+    color: rgb(85, 88, 105);
+    margin-top: 8px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-logo-products {
+    position: absolute;
+    margin-bottom: 16px;
+    margin-left: 25px;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(255, 0, 0, 0.67);
+    border-radius: 10px;
+}
+
+.cart {
+    width: 100%;
+}

@@ -1,38 +1,131 @@
-.App {
+.notFoundBox {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 25px;
+  font-weight: 325;
+}
+
+.selectionFood{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  height: 100px;
+
+}
+.selectionFood-bar-icon{
+  min-width: 70px;
+  cursor: pointer;
+  min-height: 70px;
+  border: none;
+  border-radius: 35px;
+}
+
+.selectionFood-bar {
+  width: 700px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 819px) {
+  .selectionFood-bar{
+    width: 100%;
+  }
+}
+
+
+
+.schedule {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  align-items: center;
+}
+
+.schedule-today{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f6e1e1;
+  width: 50%;
+  height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.schedule-tomorrow{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e2f6e1;
+  width: 50%;
+  height: 100%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.selectionFood{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  height: 100px;
+
+}
+.selectionFood-bar-icon{
+  min-width: 70px;
+  cursor: pointer;
+  min-height: 70px;
+  border: none;
+  border-radius: 35px;
+}
+
+.selectionFood-bar {
+  width: 700px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 819px) {
+  .selectionFood-bar{
+    width: 100%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.schedule-order{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px;
+  gap: 30px;
+  flex-direction: column;
 }
+.order {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border-radius: 15px;
+  flex-direction: column;
+  background-color: silver;
 
-.App-link {
-  color: #61dafb;
 }
+.order-item{
+  border-radius: 15px;
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+.orderId{
+  font-weight: 600;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

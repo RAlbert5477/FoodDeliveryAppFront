@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import {Header} from "./components/Header/Header";
+import {Route, Routes } from 'react-router-dom';
+import {HomeView} from "./views/HomeView";
+import {FoodMenuView} from "./views/FoodMenuView";
+import {NotFoundView} from "./views/NotFoundView";
+import {SingleFoodView} from "./views/SingleFoodView";
+import {DeliveryScheduleView} from "./views/DeliveryScheduleView";
+import {CartView} from "./views/CartView";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <Header/>
+
+          <Routes>
+              {/*<Route path="/" element={<HomeView/>}/>*/}
+              <Route path="/food-menu/" element={<FoodMenuView/>} />
+              <Route path="/food-menu/:idOfFood/" element={<SingleFoodView/>} />
+              <Route path="/delivery-schedule" element={<DeliveryScheduleView/>}/>
+              {/*    <Route path="/sign-in"/>*/}
+              <Route path="/cart/" element={<CartView/>}/>
+              <Route path="*" element={<NotFoundView />}/>
+
+          </Routes>
+
+
+      </>
   );
 }
 
-export default App;
+export {App};
