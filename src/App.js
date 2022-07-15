@@ -14,7 +14,7 @@ function App() {
         <Header/>
 
           <Routes>
-              {/*<Route path="/" element={<HomeView/>}/>*/}
+              <Route path="/" element={<HomeView/>}/>
               <Route path="/food-menu/" element={<FoodMenuView/>} />
               <Route path="/food-menu/:idOfFood/" element={<SingleFoodView/>} />
               <Route path="/delivery-schedule" element={<DeliveryScheduleView/>}/>

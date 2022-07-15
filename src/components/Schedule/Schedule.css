@@ -1,0 +1,127 @@
+.order-img{
+    cursor: pointer;
+
+    border-radius: 20px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+
+}
+.order-time{
+    font-weight: 500;
+}
+.order-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+}
+.schedule-order{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+}
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.order-box {
+    border-radius: 30px;
+    gap: 30px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #edeff8;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.order-box-item {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.order-box-item-description{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ced0db;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+    text-align: center;
+}
+.order-box-item-description h3{
+    font-size: 17px;
+
+}
+.emptyOrder-box-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    font-size: 33px;
+    background-color: rgba(84, 84, 98, 0.06);
+
+}
+.emptyOrder-title {
+    font-weight: 350;
+}
+
+.schedule-background{
+    width: 100%;
+    padding: 0 90px 90px 90px;
+    background-color: rgba(84, 84, 98, 0.06);
+
+}
+.schedule-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(36, 40, 45, 0.47);
+
+}
+.schedule-list:last-child {
+    border: none;
+
+}
+.schedule-table {
+    border-radius: 30px;
+    background-color: #ffffff;
+    border: 1px solid rgba(36, 40, 45, 0.47);
+}
+.schedule-row {
+    width: 100%;
+    padding-left: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 350;
+}
+
+@media screen and (max-width: 819px) {
+    .emptyOrder-box-title {
+        font-size: 23px;
+    }
+
+    .schedule-background {
+        padding: 0 50px 50px 50px;
+
+    }
+}

@@ -35,7 +35,7 @@ export const Header = () => {
         <>
             <div className="headerBanner"/>
             <header className="nav">
-                <NavLink className="nav-link nav-link-logo" to="/food-menu">
+                <NavLink className="nav-link nav-link-logo" to="/">
                     <img
 
                         className="logo" src={logo} alt="logo"/>
@@ -45,14 +45,14 @@ export const Header = () => {
                     <nav>
 
                         <ul className="nav-menu">
-                            {/*<NavLink*/}
-                            {/*    style={colorOfLink}*/}
-                            {/*    className="nav-link items"*/}
-                            {/*    to="/">*/}
-                            {/*    <li className="items">*/}
-                            {/*        Home*/}
-                            {/*    </li>*/}
-                            {/*</NavLink>*/}
+                            <NavLink
+                                style={colorOfLink}
+                                className="nav-link items"
+                                to="/">
+                                <li className="items">
+                                    Home
+                                </li>
+                            </NavLink>
                             <NavLink
                                 style={colorOfLink}
                                 className="nav-link items"
@@ -76,7 +76,7 @@ export const Header = () => {
                                 to="/cart">
                                 <li className="cart-logo">
                                     <IoCartOutline/>
-                                    <div className="cart-logo-products"/>
+                                    <div/>
                                 </li>
                             </NavLink>
 

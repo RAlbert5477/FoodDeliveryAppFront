@@ -64,9 +64,7 @@ export const FoodMenuList = (props) => {
                     }
                 }).map((val)=>
                         <div className="foodsMenu-items" key={val.id}>
-                            <Link
-                                className="foodLink"
-                                to={val.id}>
+
                             <img
                                 className="foodsMenu-items-img"
                                 alt={"photo of the meal " + val.title}
@@ -76,7 +74,6 @@ export const FoodMenuList = (props) => {
                                 <p>{val.title}</p>
 
                             </div>
-                            </Link>
 
                             <div className="foodsMenu-items-description">
                                 <p className="items-price">{((Number(val.price)).toFixed(2))} $</p>

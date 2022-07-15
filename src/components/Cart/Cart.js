@@ -31,7 +31,7 @@ export const Cart = (props) => {
 
 
 
-    return <div className="cart">
+    return <div className="Cart-background">
             <CartList cartList={props.cartList} clearCart={clearCart} createOrder={createOrder}/>
         </div>
 

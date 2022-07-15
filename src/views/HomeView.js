@@ -1,11 +1,11 @@
 import React from 'react';
+import {HomeBackground} from "../Home/HomeBackground";
 
 
 
 
 export const HomeView = () => (
     <>
-       <h1>Home</h1>
-
+        <HomeBackground/>
     </>
 );

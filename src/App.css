@@ -101,31 +101,3 @@
     width: 100%;
   }
 }
-.schedule-order{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  gap: 30px;
-  flex-direction: column;
-}
-.order {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  border-radius: 15px;
-  flex-direction: column;
-  background-color: silver;
-
-}
-.order-item{
-  border-radius: 15px;
-  height: 50px;
-  width: 100%;
-  font-size: 15px;
-  text-align: center;
-}
-.orderId{
-  font-weight: 600;
-
-}

@@ -18,14 +18,14 @@ export const Schedule = () => {
     }, [])
 
     return <>
-        <div className="notFoundBox">
 
-        <p>U must buy food</p>
-        </div>
-        {orderList === null
-            ? <EmptySchedule/>
+        {
+            orderList === null
+                ? <EmptySchedule/>
+                : (orderList.length === 0
+                    ? <EmptySchedule/>
+                    : <ScheduleTabs orderList={orderList}/>)
 
-            : <ScheduleTabs orderList={orderList}/>
         }
     </>
 }

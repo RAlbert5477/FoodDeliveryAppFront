@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 
+import "./Schedule.css";
+
 export const ScheduleTabs = ({orderList}) => {
 
     const [newOrderList, setNewOrderList] = useState(([...orderList].reduce((item, food)=>{
@@ -9,35 +11,38 @@ export const ScheduleTabs = ({orderList}) => {
         return newOrderList[key]
     })
 
-    const checkQuantity = (quantity) => {
-        return quantity>0;
-    }
-
-
-
     return <>
         <div className="schedule-order">
-
-
         {a
             .map((item, key) =>(
                 <div
-                    key={key}
+                    key={orderList[key].id}
                     className="order">
-                    <div className="order-item">
-                        <p className="orderId">
-                            Order ID: {item.id}
+
+                    <div className="order-box">
+                        <p className="order-title">
+                            Your Order Will Be Delivered Tomorrow At <span className="order-time">{item.time}</span>
                         </p>
-                    </div>
-                    <div className="order-item">
-                        <p>
-                            Your order will be delivered at {item.time}
-                        </p>
+                            <div className="order-box-item">
+
+                                {
+
+                                    (orderList[key].order).map((product, index) =>
+                                        <div className="order-box-item-description">
+                                            <img className="order-img" src={orderList[key].order[index].image} alt={orderList[key].order[index].title}/>
+                                            <h3>{orderList[key].order[index].title}</h3>
+                                            <p>Amount {orderList[key].order[index].quantity}</p>
+                                        </div>
+                                    )
+                                }
+                            </div>
+
                     </div>
 
                 </div>
             ))
         }
+
         </div>
     </>
 }

@@ -9,14 +9,14 @@ export const FoodMenuView = () => {
 
     return <>
         {/*<FoodSelectionMenu></FoodSelectionMenu>*/}
-        <div className="selectionFood">
-            <div className="selectionFood-bar">
-                <button className="selectionFood-bar-icon"/>
-                <button className="selectionFood-bar-icon"/>
-                <button className="selectionFood-bar-icon"/>
-                <button className="selectionFood-bar-icon"/>
-            </div>
-        </div>
+        {/*<div className="selectionFood">*/}
+        {/*    <div className="selectionFood-bar">*/}
+        {/*        <button className="selectionFood-bar-icon"/>*/}
+        {/*        <button className="selectionFood-bar-icon"/>*/}
+        {/*        <button className="selectionFood-bar-icon"/>*/}
+        {/*        <button className="selectionFood-bar-icon"/>*/}
+        {/*    </div>*/}
+        {/*</div>*/}
         <FoodMenuList foodData={data}/>
     </>
 };
